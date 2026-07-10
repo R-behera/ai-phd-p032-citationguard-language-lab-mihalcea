@@ -1,0 +1,13 @@
+{
+  "professor": "Rada Mihalcea",
+  "university": "University of Michigan",
+  "program": "Computer Science & Engineering",
+  "research_area": "NLP, computational social science, multimodal",
+  "representative_paper": "TextRank: Bringing Order into Texts; 2004; EMNLP",
+  "paper_link": "https://scholar.google.com/scholar?q=TextRank%3A+Bringing+Order+into+Texts",
+  "project_family": "language",
+  "focus": "NLP",
+  "value_add_artifact": "citation-faithful RAG and claim-level evaluation harness",
+  "next_step": "Replace seed claims with recent lab papers; add 50-100 expert-reviewable questions.",
+  "generated_for": "professor outreach value-add starter"
+}
