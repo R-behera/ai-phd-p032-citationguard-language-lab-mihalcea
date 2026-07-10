@@ -13,6 +13,46 @@
   "next_step": "Replace seed claims with recent lab papers; add 50-100 expert-reviewable questions.",
   "professor": "Rada Mihalcea",
   "project_family": "language",
+  "proposed_method": {
+    "algorithm_id": "P032-Mihalcea-Nlp",
+    "algorithm_name": "MihalceaConstraintNlpRouteEngine",
+    "core_mechanism": "prioritizes unsupported claims and citation mismatches for advisor-domain literature audits",
+    "decision_rule": "Rank seed cases by language-specific priority score with Mihalcea-aligned focus term 'NLP'.",
+    "mean_priority_score": 0.29,
+    "project_family": "language",
+    "top_cases": [
+      {
+        "action": "audit unsupported/citation-mismatched claim",
+        "case_id": "L4",
+        "priority_score": 0.59,
+        "signals": {
+          "citation_risk": 0.0,
+          "focus_bonus": 0.0,
+          "unsupported_risk": 1.0
+        }
+      },
+      {
+        "action": "keep as lower-priority grounded example",
+        "case_id": "L3",
+        "priority_score": 0.45,
+        "signals": {
+          "citation_risk": 1.0,
+          "focus_bonus": 0.3333,
+          "unsupported_risk": 0.0
+        }
+      },
+      {
+        "action": "keep as lower-priority grounded example",
+        "case_id": "L1",
+        "priority_score": 0.06,
+        "signals": {
+          "citation_risk": 0.0,
+          "focus_bonus": 0.3333,
+          "unsupported_risk": 0.0
+        }
+      }
+    ]
+  },
   "research_area": "NLP, computational social science, multimodal",
   "university": "University of Michigan",
   "value_add": "citation-faithful RAG and claim-level evaluation harness"
